@@ -1,0 +1,85 @@
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#05070c;--panel:#0a0f18;--blue:#248cff;--cyan:#62d7ff;--text:#f5f8ff;--muted:#8e9aad;--line:rgba(130,170,220,.14)}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(circle at 70% 10%,rgba(36,140,255,.09),transparent 28%),var(--bg);color:var(--text);font-family:Inter,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:linear-gradient(transparent 97%,rgba(255,255,255,.018) 100%);background-size:100% 5px;pointer-events:none;z-index:10;opacity:.35}
+a{color:inherit;text-decoration:none}.accent,.hero h1 b{color:var(--blue)}
+#particles{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:-2}
+.noise{position:fixed;inset:0;opacity:.035;pointer-events:none;z-index:9;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.nav{position:fixed;top:0;left:0;right:0;height:82px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid var(--line);background:rgba(5,7,12,.62);backdrop-filter:blur(20px);z-index:20}
+.logo{font:700 23px "Space Grotesk"}.logo span:first-child{display:inline-grid;place-items:center;width:34px;height:34px;margin-right:8px;border:1px solid rgba(36,140,255,.5);border-radius:10px;box-shadow:0 0 25px rgba(36,140,255,.18)}
+.nav nav{display:flex;gap:34px}.nav nav a{font-size:13px;color:#9ca8bb;transition:.3s}.nav nav a:hover{color:#fff}
+.nav-cta{border:1px solid var(--line);padding:11px 16px;border-radius:10px;font-size:12px}.nav-cta span{color:var(--blue);margin-left:10px}
+.menu-btn{display:none;background:none;border:0}
+.section{position:relative;max-width:1300px;margin:auto;padding:130px 5vw}
+.hero{min-height:100vh;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;padding-top:130px}
+.eyebrow{font-size:10px;letter-spacing:2.5px;color:#87a0c1;font-weight:700}.eyebrow i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#35e68c;box-shadow:0 0 14px #35e68c;margin-right:9px}
+.hero-kicker{margin-top:30px;color:#8492a8;font-size:13px;letter-spacing:4px}
+.hero h1{font:700 clamp(72px,10vw,142px)/.83 "Space Grotesk";letter-spacing:-7px;margin:18px 0 25px}.hero h1 span{background:linear-gradient(110deg,#fff 20%,#8ccaff 70%,#258dff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.typing-wrap{font:600 18px "Space Grotesk";color:#76bfff;min-height:26px}.caret{animation:blink .7s infinite}@keyframes blink{50%{opacity:0}}
+.hero-text{max-width:480px;color:var(--muted);line-height:1.8;margin:22px 0 30px;font-size:14px}.hero-actions{display:flex;gap:12px}.btn{padding:14px 19px;border-radius:11px;font-size:12px;font-weight:700;border:1px solid var(--line)}.btn.primary{background:linear-gradient(135deg,#248cff,#1260c6);box-shadow:0 12px 40px rgba(36,140,255,.22)}.btn.ghost{background:rgba(255,255,255,.025)}
+.socials{display:flex;gap:22px;margin-top:38px;font-size:11px;color:#75839a}.socials a:hover{color:#fff}.socials span{padding-left:22px;border-left:1px solid var(--line)}
+.hero-visual{height:590px;position:relative;display:grid;place-items:center;perspective:1000px}.core{width:245px;height:245px;border-radius:50%;position:relative;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#1f7bd9, #071427 45%,#02050a 72%);box-shadow:inset 0 0 55px rgba(55,161,255,.4),0 0 100px rgba(36,140,255,.2);transform-style:preserve-3d;animation:float 5s ease-in-out infinite}
+.core-ring{position:absolute;inset:-18px;border:1px solid rgba(71,172,255,.5);border-radius:50%;box-shadow:0 0 30px rgba(36,140,255,.18)}.core-text{text-align:center;font:800 40px/ .8 "Space Grotesk";letter-spacing:3px}.core-text small{font-size:9px;letter-spacing:5px;color:#77bfff}
+.orbit{position:absolute;border:1px solid rgba(77,168,255,.28);border-radius:50%;transform:rotateX(65deg) rotateY(15deg)}.orbit-a{width:430px;height:430px;animation:spin 13s linear infinite}.orbit-b{width:520px;height:220px;transform:rotateX(70deg) rotateZ(-30deg);animation:spin 9s linear infinite reverse}@keyframes spin{to{transform:rotateX(65deg) rotateY(15deg) rotateZ(360deg)}}@keyframes float{50%{transform:translateY(-15px) rotateY(8deg)}}
+.float-card{position:absolute;padding:12px 15px;background:rgba(8,15,26,.72);border:1px solid rgba(82,165,255,.2);backdrop-filter:blur(14px);border-radius:12px;box-shadow:0 20px 45px #0008}.float-card small{display:block;font-size:8px;letter-spacing:2px;color:#63748e}.float-card strong{font:700 13px "Space Grotesk";display:block;margin-top:4px}.card-one{top:18%;right:6%}.card-two{bottom:20%;left:4%}.card-three{bottom:8%;right:12%}.scroll-indicator{position:absolute;bottom:25px;left:5vw;font-size:9px;letter-spacing:2px;color:#526077}.scroll-indicator span{color:var(--blue);font-size:16px;margin-left:8px}
+.split{display:grid;grid-template-columns:.35fr 1fr;gap:8vw;border-top:1px solid var(--line)}.section-label{font-size:10px;letter-spacing:3px;color:#526078}.content{max-width:720px}.big-copy{font:600 clamp(40px,5vw,70px)/1.02 "Space Grotesk";letter-spacing:-3px;margin-bottom:38px}.big-copy span,.skills-head span,.projects-head span,.contact h2 span{color:var(--blue)}.content>p:not(.big-copy){color:var(--muted);line-height:1.9;font-size:14px;margin-bottom:16px}
+.skills-head,.projects-head{display:flex;align-items:end;justify-content:space-between;margin:25px 0 45px}.skills-head h2,.projects-head h2{font:700 clamp(45px,6vw,76px) "Space Grotesk";letter-spacing:-4px}.skills-head p,.projects-head p{color:var(--muted);font-size:12px}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.skill-card{background:linear-gradient(145deg,rgba(15,24,38,.9),rgba(7,10,17,.8));border:1px solid var(--line);border-radius:18px;padding:27px;min-height:220px;transform-style:preserve-3d;transition:border-color .3s,box-shadow .3s}.skill-card:hover{border-color:rgba(36,140,255,.5);box-shadow:0 25px 70px rgba(0,0,0,.35)}.skill-card .num{color:#3c587a;font-size:10px}.skill-card h3{font:600 25px "Space Grotesk";margin:35px 0 10px}.skill-card p{color:#76849a;font-size:12px;line-height:1.6}.bar{height:2px;background:#172231;margin-top:24px}.bar i{display:block;height:100%;background:linear-gradient(90deg,#1678e5,#62d7ff);box-shadow:0 0 12px #248cff}
+.project-stack{display:grid;grid-template-columns:1fr 1fr;gap:18px}.project-card{min-height:390px;padding:35px;background:linear-gradient(145deg,#0b1421,#060a11);border:1px solid var(--line);border-radius:22px;display:flex;flex-direction:column;transition:.35s}.project-card.featured{background:radial-gradient(circle at 80% 20%,rgba(36,140,255,.2),transparent 35%),linear-gradient(145deg,#0c1727,#060a11)}.project-number{font:700 12px "Space Grotesk";color:#49617f}.project-meta{margin-top:75px;font-size:9px;letter-spacing:2px;color:#6481a4}.project-card h3{font:700 clamp(38px,5vw,65px) "Space Grotesk";letter-spacing:-3px;margin:12px 0}.project-card h3 em{font-style:normal;color:#58baff}.project-card p{max-width:470px;color:#8190a5;font-size:13px;line-height:1.7}.project-bottom{margin-top:auto;padding-top:25px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:#8da0ba;font-size:10px}
+.edu-card{padding:35px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#0b1421,#060a11)}.edu-year{font-size:9px;letter-spacing:2px;color:#599ee6}.edu-card h2{font:700 40px "Space Grotesk";margin:18px 0 7px}.edu-card h3{font:500 17px "Space Grotesk";color:#a9c0db}.edu-card h3 span{color:var(--blue)}.edu-card p{margin-top:25px!important}.achievement{margin-top:15px;padding:20px 25px;border-left:2px solid var(--blue);background:rgba(36,140,255,.04)}.achievement span{font-size:8px;letter-spacing:2px;color:#55708e;display:block}.achievement strong{display:block;margin-top:8px;font:600 15px "Space Grotesk"}
+.contact{min-height:75vh;display:grid;grid-template-columns:.35fr 1fr;border-top:1px solid var(--line);overflow:hidden}.contact-glow{position:absolute;width:500px;height:500px;background:#147be522;filter:blur(100px);border-radius:50%;right:-180px;bottom:-180px}.contact-inner h2{font:700 clamp(65px,10vw,130px)/.86 "Space Grotesk";letter-spacing:-7px;margin:25px 0 50px}.mail{font:500 clamp(18px,2.4vw,30px) "Space Grotesk";border-bottom:1px solid #41688e;padding-bottom:12px}.mail span{color:var(--blue);float:right}.contact-links{display:flex;gap:28px;margin-top:35px;color:#718199;font-size:11px}.contact-links a:hover{color:#fff}
+footer{display:flex;justify-content:space-between;padding:25px 5vw;border-top:1px solid var(--line);font-size:9px;letter-spacing:1px;color:#46546a}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.nav nav,.nav-cta{display:none}.menu-btn{display:block}.hero{grid-template-columns:1fr}.hero-visual{height:420px;order:-1;margin-top:40px}.hero-copy{margin-top:-30px}.skills-grid{grid-template-columns:1fr 1fr}.project-stack{grid-template-columns:1fr}.split,.contact{grid-template-columns:1fr;gap:35px}.section{padding:100px 6vw}.contact-inner h2{letter-spacing:-4px}.hero h1{letter-spacing:-4px}}
+@media(max-width:600px){.hero{padding-top:100px}.hero-visual{height:330px}.core{width:170px;height:170px}.core-text{font-size:27px}.orbit-a{width:280px;height:280px}.orbit-b{width:330px;height:140px}.float-card{transform:scale(.8)}.skills-grid{grid-template-columns:1fr}.skills-head,.projects-head{display:block}.skills-head p,.projects-head p{margin-top:15px}.socials{flex-wrap:wrap}.socials span{border:0;padding:0;width:100%}.project-card{min-height:330px}.contact-inner h2{font-size:62px}footer{gap:20px;flex-direction:column}}
+
+/* Personal photo + Zenith logo */
+.photo-core{
+  overflow:hidden;
+  isolation:isolate;
+}
+.profile-photo{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 22%;
+  position:relative;
+  z-index:1;
+  filter:saturate(1.05) contrast(1.04);
+  transform:scale(1.04);
+}
+.photo-core::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background:linear-gradient(145deg,rgba(36,140,255,.12),transparent 45%,rgba(5,7,12,.18));
+}
+.photo-core .core-ring{
+  z-index:3;
+  pointer-events:none;
+}
+.edu-top{
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+.zenith-logo{
+  width:105px;
+  height:105px;
+  object-fit:contain;
+  border-radius:18px;
+  background:#fff;
+  padding:7px;
+  border:1px solid rgba(95,173,255,.28);
+  box-shadow:0 0 30px rgba(36,140,255,.16);
+  flex:none;
+}
+.edu-top h2{margin-top:8px}
+@media(max-width:600px){
+  .edu-top{align-items:flex-start;gap:14px}
+  .zenith-logo{width:78px;height:78px}
+  .edu-top h2{font-size:27px}
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kush Khurana — Aspiring AI Engineer, Python Developer and B.Tech AI student.">
+  <title>Kush Khurana | AI Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-dot"></div>
+  <canvas id="particles"></canvas>
+  <div class="noise"></div>
+
+  <header class="nav">
+    <a class="logo" href="#home"><span>K</span>Kush<span class="accent">.</span></a>
+    <button class="menu-btn" aria-label="Toggle menu"><span></span><span></span></button>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="mailto:khuranakush26@gmail.com">Let's Talk <span>↗</span></a>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><i></i> AVAILABLE FOR AI / SOFTWARE OPPORTUNITIES</div>
+        <p class="hero-kicker">HELLO, I'M</p>
+        <h1>Kush<br><span>Khurana</span><b>.</b></h1>
+        <div class="typing-wrap"><span id="typing"></span><span class="caret">|</span></div>
+        <p class="hero-text">Building practical technology with Python, AI/ML and a problem-solving mindset.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">Explore My Work <span>↗</span></a>
+          <a href="mailto:khuranakush26@gmail.com" class="btn ghost">Contact Me</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/khuranakush26" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/kush-khurana-326454287" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <span>Gurugram, Haryana</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="core photo-core">
+          <div class="core-ring"></div>
+          <img src="kush-photo.jpeg" alt="Kush Khurana" class="profile-photo">
+        </div>
+        <div class="float-card card-one"><small>FOCUS</small><strong>AI / ML</strong></div>
+        <div class="float-card card-two"><small>STACK</small><strong>PYTHON</strong></div>
+        <div class="float-card card-three"><small>BUILD</small><strong>REAL-WORLD</strong></div>
+      </div>
+      <div class="scroll-indicator">SCROLL <span>↓</span></div>
+    </section>
+
+    <section id="about" class="section split">
+      <div class="section-label reveal">01 / ABOUT</div>
+      <div class="content reveal">
+        <p class="big-copy">Turning <span>ideas</span> into practical technology.</p>
+        <p>I’m a B.Tech AI student passionate about Artificial Intelligence and software development. I enjoy building projects that turn ideas into practical, real-world solutions.</p>
+        <p>Currently, I’m improving my skills in Python, C++, AI/ML, web development, and problem-solving. My goal is to become a skilled AI Engineer and build impactful technology.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-label reveal">02 / SKILLS</div>
+      <div class="skills-head reveal">
+        <h2>My <span>toolkit</span></h2>
+        <p>Technologies I’m learning and using to build.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card tilt reveal"><span class="num">01</span><h3>Python</h3><p>Core programming, automation & project building.</p><div class="bar"><i style="width:88%"></i></div></article>
+        <article class="skill-card tilt reveal"><span class="num">02</span><h3>C++</h3><p>Problem solving, logic & programming fundamentals.</p><div class="bar"><i style="width:72%"></i></div></article>
+        <article class="skill-card tilt reveal"><span class="num">03</span><h3>AI / ML</h3><p>Exploring intelligent systems and machine learning.</p><div class="bar"><i style="width:62%"></i></div></article>
+        <article class="skill-card tilt reveal"><span class="num">04</span><h3>Data Stack</h3><p>NumPy, Pandas and Matplotlib.</p><div class="bar"><i style="width:78%"></i></div></article>
+        <article class="skill-card tilt reveal"><span class="num">05</span><h3>Developer Tools</h3><p>Git, GitHub, VS Code & Python libraries.</p><div class="bar"><i style="width:80%"></i></div></article>
+        <article class="skill-card tilt reveal"><span class="num">06</span><h3>Web Development</h3><p>Building my foundation in modern web technologies.</p><div class="bar"><i style="width:45%"></i></div></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-label reveal">03 / PROJECTS</div>
+      <div class="projects-head reveal">
+        <h2>Things I’ve <span>built</span></h2>
+        <p>Small builds today. Bigger systems tomorrow.</p>
+      </div>
+      <div class="project-stack">
+        <article class="project-card tilt reveal">
+          <div class="project-number">01</div>
+          <div class="project-meta">PYTHON · BEGINNER PROJECT</div>
+          <h3>Calculator</h3>
+          <p>A Python calculator project built to strengthen programming fundamentals, input handling and arithmetic logic.</p>
+          <div class="project-bottom"><span>Python</span><span>↗</span></div>
+        </article>
+        <article class="project-card featured tilt reveal">
+          <div class="project-number">02</div>
+          <div class="project-meta">AI · PROJECT</div>
+          <h3>FlowSense <em>AI</em></h3>
+          <p>An AI-focused project concept aimed at turning data and intelligent systems into practical, useful experiences.</p>
+          <div class="project-bottom"><span>AI / ML</span><span>↗</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section split education">
+      <div class="section-label reveal">04 / EDUCATION</div>
+      <div class="content reveal">
+        <div class="edu-card">
+          <div class="edu-top">
+            <img src="zenith-logo.png" alt="Zenith School of AI logo" class="zenith-logo">
+            <div>
+              <div class="edu-year">EXPECTED 2030</div>
+              <h2>Zenith School of AI</h2>
+              <h3>B.Tech in AI <span>|</span> Integrated MBA</h3>
+            </div>
+          </div>
+          <p>Focused on Artificial Intelligence, software development, problem-solving and building a strong technical foundation.</p>
+        </div>
+        <div class="achievement">
+          <span>ACHIEVEMENT</span>
+          <strong>Participating in Hackathons</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-glow"></div>
+      <div class="section-label reveal">05 / CONTACT</div>
+      <div class="contact-inner reveal">
+        <p class="eyebrow">HAVE AN IDEA?</p>
+        <h2>Let's build<br><span>something smart.</span></h2>
+        <a class="mail" href="mailto:khuranakush26@gmail.com">khuranakush26@gmail.com <span>↗</span></a>
+        <div class="contact-links">
+          <a href="https://github.com/khuranakush26" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/kush-khurana-326454287" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+          <span>Gurugram, Haryana</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Kush Khurana</span><span>BUILT WITH HTML · CSS · JS</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
